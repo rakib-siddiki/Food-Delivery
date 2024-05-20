@@ -25,7 +25,6 @@ const config: Config = {
         },
         extend: {
             colors: {
-                white: '#ffffff',
                 primary: {
                     50: '#F2EFFE',
                     100: '#D8CEFC',
@@ -49,27 +48,10 @@ const config: Config = {
                     700: '#444651',
                     800: '#2C2F3C',
                     900: '#151826'
-                },
-                orchid: {
-                    50: '#FCEFFB',
-                    100: '#F9DEF6',
-                    200: '#F5CEF2',
-                    300: '#F2BDED',
-                    400: '#EFADE9',
-                    500: '#EC9CE4',
-                    600: '#E98CE0',
-                    700: '#E57BDB',
-                    800: '#E26BD7',
-                    900: '#DF5AD2'
-                },
-                success: '#3CB371',
-                error: '#ff4444',
-                warning: '#ffbb33',
-                info: '#33b5e5'
+                }
             },
             fontFamily: {
-                nunito: ['var(--font-nunito-sans)'],
-                rubik: ['var(--font-rubik-sans)']
+                jost: ['var(--font-jost)']
             },
             boxShadow: {
                 base: '0px 24px 60px 0px rgba(21, 24, 38, 0.15)'

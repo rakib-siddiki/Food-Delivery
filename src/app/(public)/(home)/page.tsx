@@ -1,9 +1,14 @@
-import { Welcome } from './components';
+import { ThemeSwitcher } from '@/components/ThemeSwitcher';
 
 const HomePage = () => {
     return (
         <>
-            <Welcome />
+            <div className='h-screen flex items-center flex-col justify-center'>
+                <div className='flex mb-2 gap-4'>
+                    Change theme: <ThemeSwitcher />
+                </div>
+                <h1 className='text-primary-900'>Wellcome</h1>
+            </div>
         </>
     );
 };
