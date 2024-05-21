@@ -9,7 +9,7 @@ interface IProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 const colorClasses = {
     primary:
-        'border-transparent text-white bg-primary-500 hover:bg-primary-400 focus:border-pink-700 focus:shadow-outline-pink active:bg-pink-700 dark:bg-pink-700',
+        'border-transparent text-white bg-primary-500 hover:bg-primary-400 focus:border-pink-700 focus:shadow-outline-pink active:bg-pink-700 dark:bg-pink-700 dark:hover:bg-pink-600',
     white: 'border-gray-300 text-gray-700 bg-white hover:text-gray-500 focus:border-blue-300 focus:shadow-outline-blue active:text-gray-800 active:bg-gray-50'
 };
 const baseClasses =

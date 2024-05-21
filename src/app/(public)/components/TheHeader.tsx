@@ -7,7 +7,7 @@ const TheHeader = () => {
             <nav className='py-6 flex items-center justify-between'>
                 <Link
                     href='/'
-                    className='inline-block text-primary-500 text-3xl font-extrabold'
+                    className='inline-block text-primary-500 text-3xl font-extrabold dark:text-pink-700'
                 >
                     FoodDelivery
                 </Link>
