@@ -18,14 +18,14 @@ const PopulerAreas = () => {
                     <Icons.ArrowRight className='size-4 xs:size-5' />
                 </Link>
             </div>
-            <main className='size-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-10'>
+            <main className='size-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-7 sm:gap-y-10'>
                 {(CARD_CONTENT ?? []).map(({ id, src, ...rest }) => (
                     <Fragment key={id}>
                         {id === '1' ? (
                             <div className='row-span-2'>
                                 <Card
                                     src={src}
-                                    className='h-fit sm:h-[600px]'
+                                    className='sm:h-[600px]'
                                     {...rest}
                                 />
                             </div>

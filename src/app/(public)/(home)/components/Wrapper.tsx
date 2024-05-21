@@ -1,5 +1,5 @@
 import React from 'react';
-import { Hero, PopulerAreas, Promotion } from '.';
+import { Hero, HowItWorks, PopulerAreas, Promotion } from '.';
 
 const Wrapper = () => {
     return (
@@ -7,6 +7,7 @@ const Wrapper = () => {
             <Hero />
             <Promotion />
             <PopulerAreas />
+            <HowItWorks />
         </section>
     );
 };

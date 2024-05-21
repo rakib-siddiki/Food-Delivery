@@ -11,7 +11,7 @@ const Card: FC<IProps> = ({ ...props }) => {
         time: { min, max }
     } = props;
     return (
-        <section>
+        <section className='h-fit'>
             <Image
                 {...props}
                 alt='card image'
@@ -22,7 +22,7 @@ const Card: FC<IProps> = ({ ...props }) => {
                 )}
             />
             <h3 className='text-2xl '>{title}</h3>
-            <div className='sm:flex items-center justify-between text-sm md:text-lg'>
+            <div className='flex items-center justify-between text-sm md:text-lg'>
                 <span className='inline-flex items-center gap-2'>
                     <Icons.Bell /> $ {fee} Delivery Fee
                 </span>
