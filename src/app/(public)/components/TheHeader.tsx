@@ -1,4 +1,5 @@
 import ThemeSwitcher from '@/components/ThemeSwitcher';
+import { Button } from '@/components/core';
 import Link from 'next/link';
 
 const TheHeader = () => {
@@ -12,9 +13,11 @@ const TheHeader = () => {
                     FoodDelivery
                 </Link>
                 <div className='flex items-center gap-4'>
-                    <Link href='/auth/sign-in' className='font-semibold'>
-                        Sign In
-                    </Link>
+                    <Button color='primary'>
+                        <Link href='/auth/sign-in' className='font-semibold'>
+                            Sign In
+                        </Link>
+                    </Button>
                     <ThemeSwitcher />
                 </div>
             </nav>

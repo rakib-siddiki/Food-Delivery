@@ -6,8 +6,9 @@
     * {
         @apply m-0 p-0 box-border;
     }
+
     body {
-        @apply text-base bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-300 font-normal font-jost leading-normal;
+        @apply text-base bg-gray-50 dark:bg-gray-950 text-gray-800 dark:text-gray-200 font-normal font-jost leading-normal;
     }
 }
 
@@ -27,7 +28,9 @@
 
     /* Hide scrollbar for IE, Edge and Firefox */
     .no-scrollbar {
-        -ms-overflow-style: none; /* IE and Edge */
-        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
     }
 }

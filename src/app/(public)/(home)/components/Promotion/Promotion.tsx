@@ -18,7 +18,7 @@ const Promotion = () => {
                     />
                 </div>
                 <div className='sm:max-w-md space-y-3 md:space-y-7'>
-                    <h2 className='text-3xl md:text-5xl'>{title}</h2>
+                    <h2 className='text-3.5xl md:text-5xl'>{title}</h2>
                     <p className='max-md:text-sm'>{description}</p>
                     <Button color='primary' className='w-fit'>
                         Download our App
