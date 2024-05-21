@@ -1,5 +1,6 @@
 import React from 'react';
 import { Hero, HowItWorks, PopulerAreas, Promotion } from '.';
+import { CTA } from './CTA';
 
 const Wrapper = () => {
     return (
@@ -8,6 +9,7 @@ const Wrapper = () => {
             <Promotion />
             <PopulerAreas />
             <HowItWorks />
+            <CTA />
         </section>
     );
 };

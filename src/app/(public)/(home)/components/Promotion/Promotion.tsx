@@ -3,8 +3,7 @@ import React from 'react';
 import foodImage from '@/app/images/food.png';
 import { Button } from '@/components/core';
 import { PROMOTION_CONTENT } from '@/static';
-import { IPromotion } from '@/app/(public)/(home)/types';
-const { title, description } = PROMOTION_CONTENT as IPromotion;
+const { title, description } = PROMOTION_CONTENT;
 const Promotion = () => {
     return (
         <section className='container'>

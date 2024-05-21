@@ -82,8 +82,8 @@ export const Icons = {
             <path
                 fillRule='evenodd'
                 clipRule='evenodd'
+                className='fill-primary-50 dark:fill-pink-200'
                 d='M15.751 92.4588C-1.12491 77.428 -10.25 48.8709 18.9396 48.5155C26.007 48.4293 32.5901 44.9324 36.4826 39.2075C44.2817 27.7367 45.8205 11.8127 70.0411 17.0147C128.95 45.2152 77.5464 135.78 15.751 92.4588Z'
-                fill='#FFD0D8'
             />
             <path
                 fillRule='evenodd'
@@ -105,8 +105,8 @@ export const Icons = {
             <path
                 fillRule='evenodd'
                 clipRule='evenodd'
+                className='fill-primary-50 dark:fill-pink-200'
                 d='M15.751 92.4588C-1.12491 77.428 -10.25 48.8709 18.9396 48.5155C26.007 48.4293 32.5901 44.9324 36.4826 39.2075C44.2817 27.7367 45.8205 11.8127 70.0411 17.0147C128.95 45.2152 77.5464 135.78 15.751 92.4588Z'
-                fill='#FFD0D8'
             />
             <path
                 fillRule='evenodd'
@@ -128,8 +128,8 @@ export const Icons = {
             <path
                 fillRule='evenodd'
                 clipRule='evenodd'
+                className='fill-primary-50 dark:fill-pink-200'
                 d='M15.751 92.4588C-1.12491 77.428 -10.25 48.8709 18.9396 48.5155C26.007 48.4293 32.5901 44.9324 36.4826 39.2075C44.2817 27.7367 45.8205 11.8127 70.0411 17.0147C128.95 45.2152 77.5464 135.78 15.751 92.4588Z'
-                fill='#FFD0D8'
             />
             <path
                 fillRule='evenodd'

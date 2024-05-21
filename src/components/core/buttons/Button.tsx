@@ -13,14 +13,13 @@ const colorClasses = {
     white: 'border-gray-300 text-gray-700 bg-white hover:text-gray-500 focus:border-blue-300 focus:shadow-outline-blue active:text-gray-800 active:bg-gray-50'
 };
 const baseClasses =
-    'w-full inline-flex items-center justify-center px-4 py-2 border text-sm leading-5 font-semibold rounded-full focus:outline-none transition ease-in-out duration-100';
+    'w-full inline-flex items-center justify-center px-4 py-2 border text-sm leading-5 font-semibold rounded-full min-w-fit focus:outline-none transition ease-in-out duration-100';
 
 const Button = ({ color, children, className, ...rest }: IProps) => {
     return (
         <>
             <button
                 {...rest}
-                type='button'
                 className={cn(baseClasses, colorClasses[color], className)}
             >
                 {children}
