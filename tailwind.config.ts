@@ -10,9 +10,13 @@ const config: Config = {
     theme: {
         container: {
             center: true,
-            padding: '2rem',
+            padding: {
+                DEFAULT: '1rem',
+                '2xl': '6.5rem'
+            },
             screens: {
-                '2xl': '1280px'
+                xl: '1280px',
+                '2xl': '1400px'
             }
         },
         screens: {
@@ -26,20 +30,12 @@ const config: Config = {
         extend: {
             colors: {
                 primary: {
-                    50: '#F2EFFE',
-                    100: '#D8CEFC',
-                    200: '#CBBDFB',
-                    300: '#BFADFA',
-                    400: '#B29CF9',
-                    500: '#A58CF8',
-                    600: '#987BF7',
-                    700: '#8B6BF6',
-                    800: '#7E5AF5',
-                    900: '#7151dd'
+                    400: '#FB0E74',
+                    500: '#F40469'
                 },
                 gray: {
                     50: '#E8E8E9',
-                    100: '#D0D1D4',
+                    100: '#C5CBD1',
                     200: '#B9BABE',
                     300: '#A1A3A8',
                     400: '#8A8C93',

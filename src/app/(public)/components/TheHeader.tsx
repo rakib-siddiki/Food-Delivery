@@ -1,7 +1,23 @@
+import ThemeSwitcher from '@/components/ThemeSwitcher';
+import Link from 'next/link';
+
 const TheHeader = () => {
     return (
-        <header className='border-b w-full py-4 bg-slate-300 dark:bg-transparent dark:text-gray-50 text-center'>
-            App header
+        <header className='container'>
+            <nav className='py-6 flex items-center justify-between'>
+                <Link
+                    href='/'
+                    className='inline-block text-primary-500 text-3xl font-extrabold'
+                >
+                    FoodDelivery
+                </Link>
+                <div className='flex items-center gap-4'>
+                    <Link href='/auth/sign-in' className='font-semibold'>
+                        Sign In
+                    </Link>
+                    <ThemeSwitcher />
+                </div>
+            </nav>
         </header>
     );
 };
