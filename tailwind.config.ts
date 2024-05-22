@@ -10,9 +10,13 @@ const config: Config = {
     theme: {
         container: {
             center: true,
-            padding: '2rem',
+            padding: {
+                DEFAULT: '1rem',
+                '2xl': '6.5rem'
+            },
             screens: {
-                '2xl': '1280px'
+                xl: '1280px',
+                '2xl': '1400px'
             }
         },
         screens: {
@@ -26,26 +30,21 @@ const config: Config = {
         extend: {
             colors: {
                 primary: {
-                    50: '#F2EFFE',
-                    100: '#D8CEFC',
-                    200: '#CBBDFB',
-                    300: '#BFADFA',
-                    400: '#B29CF9',
-                    500: '#A58CF8',
-                    600: '#987BF7',
-                    700: '#8B6BF6',
-                    800: '#7E5AF5',
-                    900: '#7151dd'
+                    50: '#FFD0D8',
+                    300: '#FF6A90',
+                    400: '#FB0E74',
+                    500: '#F40469'
                 },
                 gray: {
-                    50: '#E8E8E9',
-                    100: '#D0D1D4',
+                    25: '#F8F9FA',
+                    50: '#F5F5F5',
+                    100: '#C5CBD1',
                     200: '#B9BABE',
                     300: '#A1A3A8',
                     400: '#8A8C93',
                     500: '#73747D',
                     600: '#5B5D67',
-                    700: '#444651',
+                    700: '#283646',
                     800: '#2C2F3C',
                     900: '#151826'
                 }
@@ -53,8 +52,21 @@ const config: Config = {
             fontFamily: {
                 jost: ['var(--font-jost)']
             },
-            boxShadow: {
-                base: '0px 24px 60px 0px rgba(21, 24, 38, 0.15)'
+            fontSize: {
+                xs: ['12px', '16px'],
+                sm: ['14px', '20px'],
+                base: ['16px', '24px'],
+                lg: ['18px', '28px'],
+                xl: ['20px', '32px'],
+                '2xl': ['22px', '36px'],
+                '3xl': ['24px', '40px'],
+                '3.5xl': ['32px', '48px'],
+                '4xl': ['36px', '40px'],
+                '5xl': ['48px', '64px'],
+                '6xl': ['56px', '72px']
+            },
+            borderRadius: {
+                '4xl': '32px'
             }
         }
     },

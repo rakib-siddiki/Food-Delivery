@@ -1,36 +1,33 @@
-import { forwardRef } from 'react';
-
-interface IProps {
-    type?: string;
-    className?: string;
-    required?: boolean;
+import { InputHTMLAttributes, forwardRef } from 'react';
+import { twMerge } from 'tailwind-merge';
+interface IProps extends InputHTMLAttributes<HTMLInputElement> {
     label?: string;
-    placeholder?: string;
 }
 
 const InputField = forwardRef<HTMLInputElement, IProps>(
-    ({ className, type, label, placeholder, required }, ref) => {
+    ({ className, label, ...rest }, ref) => {
         const id = Math.random() * 10;
 
         return (
-            <div className='mb-5'>
+            <>
                 {label && (
                     <label
                         htmlFor={`input_${id}`}
-                        className='block mb-2 text-sm font-medium text-gray-900 dark:text-white'
+                        className='block mb-2 text-lg font-semibold text-gray-900 dark:text-white'
                     >
                         {label}
                     </label>
                 )}
                 <input
+                    {...rest}
                     ref={ref}
-                    type={type || 'text'}
                     id={`input_${id}`}
-                    className={`${className} border bg-white border-white text-gray-800 text-sm rounded-lg focus:primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white focus:outline-primary-700 dark:focus:primary-500 dark:focus:border-primary-500 duration-150 transition-all`}
-                    placeholder={placeholder}
-                    required={required}
+                    className={twMerge(
+                        'w-full border font-semibold text-lg dark:bg-gray-800 border-gray-100 dark:border-gray-900 focus:border-gray-300 dark:focus:border-gray-200 transition duration-100 p-2.5 rounded outline-none placeholder:text-gray-100 dark:placeholder:text-gray-50 dark:text-gray-50',
+                        className
+                    )}
                 />
-            </div>
+            </>
         );
     }
 );
