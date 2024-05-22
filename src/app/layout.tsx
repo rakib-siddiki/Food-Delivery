@@ -14,6 +14,9 @@ import React from 'react';
 
 export const metadata: Metadata = {
     metadataBase: new URL(SITE_DOMAIN),
+    icons: {
+        icon: '/favicon.svg'
+    },
     title: {
         default: SITE_TITLE_DEFAULT,
         template: SITE_TITLE_TEMPLATE_DEFAULT

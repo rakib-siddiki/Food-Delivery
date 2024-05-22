@@ -8,7 +8,7 @@ const Hero = () => {
         <section>
             <Image
                 src={heroImage}
-                alt='hero image'
+                alt='hero-image'
                 placeholder='blur'
                 className='w-full h-[80vh] object-cover relative'
             />
@@ -20,7 +20,7 @@ const Hero = () => {
                     <span className='flex items-center gap-2.5 font-semibold text-lg py-4 px-3 sm:px-6 w-1/4 min-w-fit'>
                         <Icons.Location /> New York
                     </span>
-                    <span className='px-px h-10 bg-gray-100 dark:bg-gray-500'></span>
+                    <span className='px-px h-10 bg-gray-100 dark:bg-gray-500' />
                     <InputField className='size-full rounded-none border-none' />
                     <Button
                         color='primary'

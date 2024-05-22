@@ -5,10 +5,10 @@ import Link from 'next/link';
 const TheHeader = () => {
     return (
         <header className='container'>
-            <nav className='py-6 flex items-center justify-between'>
+            <nav className='py-6 flex items-center justify-between gap-2'>
                 <Link
                     href='/'
-                    className='inline-block text-primary-500 text-4xl font-extrabold dark:text-pink-700'
+                    className='inline-block text-primary-500 text-3.5xl sm:text-4xl font-extrabold dark:text-pink-700'
                 >
                     FoodDelivery
                 </Link>
@@ -24,5 +24,4 @@ const TheHeader = () => {
         </header>
     );
 };
-
 export default TheHeader;

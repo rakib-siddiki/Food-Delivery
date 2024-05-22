@@ -19,7 +19,7 @@ const TheFooter = () => {
                         {(FOOTER_NAV_MENUS ?? []).map((menu) => (
                             <li
                                 key={menu}
-                                className='font-semibold text-sm sm:text-lg '
+                                className='font-semibold text-sm sm:text-lg'
                             >
                                 {menu}
                             </li>
@@ -29,16 +29,16 @@ const TheFooter = () => {
             </nav>
             <section className='bg-gray-25 dark:bg-gray-900'>
                 <div className='container'>
-                    <div className='flex max-lg:justify-between gap-2 lg:gap-56 py-8 sm:py-11 relative'>
+                    <div className='flex max-lg:justify-between gap-5 lg:gap-56 py-8 sm:py-11 relative'>
                         <FooterList lists={address}>
                             <Link
                                 href='tel:+10-234-5678'
-                                className='text-sm inline-block mt-8'
+                                className='text-xs xs:text-sm inline-block mt-8'
                             >
                                 +10-234-5678
                             </Link>
                         </FooterList>
-                        <div className='flex gap-3 sm:gap-10'>
+                        <div className='flex flex-wrap gap-3 sm:gap-10'>
                             <FooterList lists={restaurants} />
                             <FooterList lists={faqs} />
                             <FooterList lists={parentCompanys} />
@@ -66,14 +66,14 @@ const FooterList = ({
     lists,
     children
 }: {
-    lists: string[];
+    lists: { id: string; text: string }[];
     children?: ReactNode;
 }) => {
     return (
         <ul>
-            {(lists ?? []).map((list) => (
+            {(lists ?? []).map(({ id, text: list }) => (
                 <>
-                    <li className='text-sm' key={list}>
+                    <li className='text-xs xs:text-sm' key={id}>
                         {list}
                     </li>
                 </>

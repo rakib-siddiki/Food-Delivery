@@ -95,7 +95,7 @@ export const WORKS_CARD_CONTENT: IWorkCard[] = [
         fundamentally indefinable, unsayable; there is something sacred about its demands`
     },
     {
-        id: '1',
+        id: '3',
         icon: 'FoodShape',
         title: 'Enjoy!',
         description: `In the artist's own experience, of course, art is 
@@ -138,15 +138,31 @@ export const TESTIMONIAL_CONTENT: ITestimonial[] = [
     }
 ];
 
-export const FOOTER_NAV_MENUS = [
+export const FOOTER_NAV_MENUS: string[] = [
     'Partners',
     'About Us',
     'Privacy Policy',
     'Contact Us'
 ];
 export const FOOTER_LISTS = {
-    address: ['123 Lorem Ipsum Street', 'Tangerang, Banten'],
-    restaurants: ['All Restaurant', 'Best Sellers', 'Top Rated', 'Newcomers'],
-    faqs: ['FAQ', 'Join our program', 'Be our partners', 'Terms & Condition'],
-    parentCompanys: ['Our Parent Company', 'Make an investment']
+    address: [
+        { id: '1', text: '123 Lorem Ipsum Street' },
+        { id: '2', text: 'Tangerang, Banten' }
+    ],
+    restaurants: [
+        { id: '1', text: 'All Restaurant' },
+        { id: '2', text: 'Best Sellers' },
+        { id: '3', text: 'Top Rated' },
+        { id: '4', text: 'Newcomers' }
+    ],
+    faqs: [
+        { id: '1', text: 'FAQ' },
+        { id: '2', text: 'Join our program' },
+        { id: '3', text: 'Be our partners' },
+        { id: '4', text: 'Terms & Condition' }
+    ],
+    parentCompanys: [
+        { id: '1', text: 'Our Parent Company' },
+        { id: '2', text: 'Make an investment' }
+    ]
 };
