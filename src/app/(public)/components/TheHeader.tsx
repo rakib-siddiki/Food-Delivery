@@ -8,12 +8,12 @@ const TheHeader = () => {
             <nav className='py-6 flex items-center justify-between'>
                 <Link
                     href='/'
-                    className='inline-block text-primary-500 text-3xl font-extrabold dark:text-pink-700'
+                    className='inline-block text-primary-500 text-4xl font-extrabold dark:text-pink-700'
                 >
                     FoodDelivery
                 </Link>
                 <div className='flex items-center gap-4'>
-                    <Button color='primary'>
+                    <Button color='primary' className='w-auto'>
                         <Link href='/auth/sign-in' className='font-semibold'>
                             Sign In
                         </Link>

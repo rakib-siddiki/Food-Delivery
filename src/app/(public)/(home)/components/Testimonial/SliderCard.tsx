@@ -7,7 +7,7 @@ import { useSlider } from '../../hooks';
 const SliderCard = () => {
     const { scrollNext, scrollPrev, settings, sliderRef, Slider } = useSlider();
     return (
-        <div className='relative max-w-xl mx-auto size-full'>
+        <div className='relative size-full max-w-[608px] max-h-[345px] mx-auto '>
             <Slider ref={sliderRef} {...settings}>
                 {TESTIMONIAL_CONTENT.map(({ id, src, title, description }) => (
                     <div

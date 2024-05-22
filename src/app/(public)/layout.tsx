@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import { TheHeader } from './components';
+import { TheFooter, TheHeader } from './components';
 import { Metadata } from 'next';
 import { SITE_TITLE_DEFAULT, SITE_TITLE_TEMPLATE_DEFAULT } from '@/configs';
 
@@ -14,6 +14,7 @@ const PublicLayout = ({ children }: { children: ReactNode }) => {
         <div>
             <TheHeader />
             {children}
+            <TheFooter />
         </div>
     );
 };

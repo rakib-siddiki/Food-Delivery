@@ -137,3 +137,16 @@ export const TESTIMONIAL_CONTENT: ITestimonial[] = [
         description: `David Martinez, delighted in the Tacos Al Pastor`
     }
 ];
+
+export const FOOTER_NAV_MENUS = [
+    'Partners',
+    'About Us',
+    'Privacy Policy',
+    'Contact Us'
+];
+export const FOOTER_LISTS = {
+    address: ['123 Lorem Ipsum Street', 'Tangerang, Banten'],
+    restaurants: ['All Restaurant', 'Best Sellers', 'Top Rated', 'Newcomers'],
+    faqs: ['FAQ', 'Join our program', 'Be our partners', 'Terms & Condition'],
+    parentCompanys: ['Our Parent Company', 'Make an investment']
+};

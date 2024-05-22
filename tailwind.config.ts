@@ -36,6 +36,7 @@ const config: Config = {
                     500: '#F40469'
                 },
                 gray: {
+                    25: '#F8F9FA',
                     50: '#F5F5F5',
                     100: '#C5CBD1',
                     200: '#B9BABE',
@@ -65,9 +66,8 @@ const config: Config = {
                 '6xl': ['56px', '72px']
             },
             borderRadius: {
-                "4xl": '32px'
+                '4xl': '32px'
             }
-
         }
     },
     plugins: [require('autoprefixer')]
