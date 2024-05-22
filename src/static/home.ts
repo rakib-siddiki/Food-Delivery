@@ -1,9 +1,19 @@
-import { IPromotion, ICard, IWorkCard } from '@/app/(public)/(home)/types';
+import {
+    IPromotion,
+    ICard,
+    IWorkCard,
+    ITestimonial
+} from '@/app/(public)/(home)/types';
 import photo1 from '@/app/images/populerAreas/Photo1.png';
 import photo2 from '@/app/images/populerAreas/Photo2.png';
 import photo3 from '@/app/images/populerAreas/Photo3.png';
 import photo4 from '@/app/images/populerAreas/Photo4.png';
 import photo5 from '@/app/images/populerAreas/Photo5.png';
+// TESTIMONIAL
+import cardImage1 from '@/app/images/testimonialImages/image1.png';
+import cardImage2 from '@/app/images/testimonialImages/image2.jpg';
+import cardImage3 from '@/app/images/testimonialImages/image3.jpg';
+import cardImage4 from '@/app/images/testimonialImages/image4.jpg';
 
 export const PROMOTION_CONTENT: IPromotion = {
     title: 'Take a taste, come join us. Life is so endlessly delicious',
@@ -90,5 +100,40 @@ export const WORKS_CARD_CONTENT: IWorkCard[] = [
         title: 'Enjoy!',
         description: `In the artist's own experience, of course, art is 
         fundamentally indefinable, unsayable; there is something sacred about its demands`
+    }
+];
+
+export const COMPANYS_LOGO: string[] = [
+    '/companyLogo/logo 1.svg',
+    '/companyLogo/logo 2.svg',
+    '/companyLogo/logo 3.svg',
+    '/companyLogo/logo 4.svg',
+    '/companyLogo/logo 5.svg'
+];
+
+export const TESTIMONIAL_CONTENT: ITestimonial[] = [
+    {
+        id: '1',
+        src: cardImage1,
+        title: `In the artist's own experience, of course, art is fundamentally indefinable, unsayable`,
+        description: `Tim Oliver, ordered Burger Extracheese`
+    },
+    {
+        id: '2',
+        src: cardImage2,
+        title: `Fresh Ingredients, Exquisite Taste`,
+        description: `James Anderson, savored the Caesar Salad`
+    },
+    {
+        id: '3',
+        src: cardImage3,
+        title: `Deliciously Crafted for You`,
+        description: `Linda Thompson, relished the Grilled Salmon`
+    },
+    {
+        id: '4',
+        src: cardImage4,
+        title: `A Culinary Journey Like No Other`,
+        description: `David Martinez, delighted in the Tacos Al Pastor`
     }
 ];

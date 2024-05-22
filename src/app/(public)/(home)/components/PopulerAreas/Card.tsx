@@ -17,7 +17,7 @@ const Card: FC<IProps> = ({ ...props }) => {
                 alt='card image'
                 placeholder='blur'
                 className={cn(
-                    'size-full object-cover rounded-xl sm:rounded-[32px] mb-4',
+                    'size-full object-cover rounded-xl sm:rounded-4xl mb-4',
                     props.className
                 )}
             />

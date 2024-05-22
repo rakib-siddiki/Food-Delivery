@@ -5,7 +5,7 @@ import Link from 'next/link';
 const CTA = () => {
     return (
         <section className='container'>
-            <main className='relative bg-primary-300 rounded-2xl overflow-hidden px-5 sm:px-24 py-14'>
+            <main className='relative bg-primary-300 rounded-2xl overflow-hidden px-5 sm:px-24 py-14 dark:bg-pink-900'>
                 <div className='absolute top-0 left-0'>
                     <Curve variant='outline' className='w-8/12 sm:size-full' />
                 </div>

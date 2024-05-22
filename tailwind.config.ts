@@ -64,9 +64,10 @@ const config: Config = {
                 '5xl': ['48px', '64px'],
                 '6xl': ['56px', '72px']
             },
-            boxShadow: {
-                base: '0px 24px 60px 0px rgba(21, 24, 38, 0.15)'
+            borderRadius: {
+                "4xl": '32px'
             }
+
         }
     },
     plugins: [require('autoprefixer')]
