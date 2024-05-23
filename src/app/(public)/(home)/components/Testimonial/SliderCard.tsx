@@ -7,13 +7,17 @@ import { useSlider } from '../../hooks';
 const SliderCard = () => {
     const { scrollNext, scrollPrev, settings, sliderRef, Slider } = useSlider();
     return (
-        <div className='relative size-full max-w-[608px] max-h-[345px] mx-auto '>
-            <Slider ref={sliderRef} {...settings}>
+        <div className='relative size-full max-w-[38rem] max-h-[21.5rem] mx-auto '>
+            <Slider
+                ref={sliderRef}
+                {...settings}
+                className='h-80 rounded-4xl overflow-clip'
+            >
                 {(TESTIMONIAL_CONTENT ?? []).map(
                     ({ id, src, title, description }) => (
                         <div
                             key={id}
-                            className='relative overflow-hidden rounded-4xl after:absolute after:inset-0 after:bg-gray-900/50 -z-10'
+                            className='relative after:absolute after:inset-0 after:bg-gray-900/50 -z-10'
                         >
                             <Image
                                 src={src}
@@ -34,14 +38,14 @@ const SliderCard = () => {
                 )}
             </Slider>
             <button
-                className='p-4 absolute top-1/2 -left-12 -translate-y-1/2  cursor-pointer'
+                className='p-4 hidden md:block absolute top-1/2 -left-12 -translate-y-1/2  cursor-pointer'
                 onClick={scrollPrev}
                 aria-label='Scroll to previous'
             >
                 <Icons.ChevronLeft className='stroke-gray-500' />
             </button>
             <button
-                className='p-4 absolute top-1/2 -translate-y-1/2 -right-12 rotate-180 cursor-pointer'
+                className='p-4 hidden md:block absolute top-1/2 -translate-y-1/2 -right-12 rotate-180 cursor-pointer'
                 onClick={scrollNext}
                 aria-label='Scroll to next'
             >

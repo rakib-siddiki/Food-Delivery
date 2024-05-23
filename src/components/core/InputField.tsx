@@ -23,7 +23,7 @@ const InputField = forwardRef<HTMLInputElement, IProps>(
                     ref={ref}
                     id={`input_${id}`}
                     className={twMerge(
-                        'w-full border font-semibold text-lg dark:bg-gray-800 border-gray-100 dark:border-gray-900 focus:border-gray-300 dark:focus:border-gray-200 transition duration-100 p-2.5 rounded outline-none placeholder:text-gray-100 dark:placeholder:text-gray-50 dark:text-gray-50',
+                        'w-full border font-medium text-lg dark:bg-gray-800 border-gray-100 dark:border-gray-900 focus:border-gray-300 dark:focus:border-gray-200 transition duration-100 p-2.5 rounded outline-none placeholder:text-gray-100 dark:placeholder:text-gray-50 dark:text-gray-200',
                         className
                     )}
                 />

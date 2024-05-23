@@ -30,11 +30,7 @@ const PopulerAreas = () => {
                                 />
                             </div>
                         ) : (
-                            <Card
-                                src={src}
-                                className='max-h-[240px]'
-                                {...rest}
-                            />
+                            <Card src={src} className='max-h-60' {...rest} />
                         )}
                     </Fragment>
                 ))}

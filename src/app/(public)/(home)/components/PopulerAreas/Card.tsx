@@ -4,21 +4,22 @@ import Image, { ImageProps } from 'next/image';
 import React, { FC } from 'react';
 import { ICard } from '@/app/(public)/(home)/types';
 type IProps = ImageProps & Omit<ICard, 'id'>;
-const Card: FC<IProps> = ({ ...props }) => {
+const Card: FC<IProps> = (props) => {
     const {
         title,
         fee,
-        time: { min, max }
+        time: { min, max },
+        ...rest
     } = props;
     return (
         <section className='h-fit'>
             <Image
-                {...props}
+                {...rest}
                 alt='card image'
                 placeholder='blur'
                 className={cn(
                     'size-full object-cover rounded-xl sm:rounded-4xl mb-4',
-                    props.className
+                    rest.className
                 )}
             />
             <h3 className='text-2xl '>{title}</h3>

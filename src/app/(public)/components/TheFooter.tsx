@@ -72,11 +72,9 @@ const FooterList = ({
     return (
         <ul>
             {(lists ?? []).map(({ id, text: list }) => (
-                <>
-                    <li className='text-xs xs:text-sm' key={id}>
-                        {list}
-                    </li>
-                </>
+                <li className='text-xs xs:text-sm' key={id}>
+                    {list}
+                </li>
             ))}
             {children ? <>{children}</> : null}
         </ul>
